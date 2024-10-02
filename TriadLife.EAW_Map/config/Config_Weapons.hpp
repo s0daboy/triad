@@ -56,7 +56,7 @@ class WeaponShops {
             { "JMSSA_Ruby_pistol", "", 40000, 20000, "" },
             { "JMSSA_pa1935apistol", "", 45000, 22500, "" },
             { "EAW_Hanyang88_Base", "", 35000, 17500, "" },
-g           { "JMSSA_beretta18_Rifle", "", 40000, 20000, "" },
+            { "JMSSA_beretta18_Rifle", "", 40000, 20000, "" },
             { "JMSSA_breda30_Rifle", "", 90000, 45000, "" }
         };
         mags[] = {
@@ -159,21 +159,21 @@ g           { "JMSSA_beretta18_Rifle", "", 40000, 20000, "" },
             { "FirstAidKit", "", 150, 75, "" },
             { "WBK_BrassKnuckles", "", 10000, 5000, "" },
             { "Police_Bat", "", 10000, 5000, "" },
-            { "EAW_C96_Carbine", "", 35000, 17500, "call life_coplevel >= 1" },
-            { "JMSSA_WebleyVI_pistol", "", 35000, 17500, "call life_coplevel >= 1" },
-            { "JMSSA_lugerP08a1pistol", "", 30000, 15000, "call life_coplevel >= 1" },
-            { "EAW_Hanyang_Bayonet", "", 15000, 7500, "call life_coplevel >= 1" },
-            { "EAW_Hanyang88_Base", "", 35000, 17500, "call life_coplevel >= 1" },
-            { "JMSSA_emp35_Rifle", "", 40000, 20000, "call life_coplevel >= 1" },
-            { "EAW_Type24_Rifle_Base", "", 35000, 17500, "call life_coplevel >= 2" },
-            { "EAW_C96_Auto", "", 35000, 17500, "call life_coplevel >= 2" },
-            { "EAW_C96_Auto_Carbine", "", 35000, 17500, "call life_coplevel >= 2" },
-            { "EAW_MP28", "", 35000, 17500, "call life_coplevel >= 2" },
-            { "EAW_FN30_Base", "", 35000, 17500, "call life_coplevel >= 2" },
-            { "JMSSA_mp40_Rifle", "", 70000, 35000, "call life_coplevel >= 3" },
-            { "EAW_ZB26_Base", "", 100000, 50000, "call life_coplevel >= 3" },
-            { "EAW_Type95", "", 100000, 50000, "call life_coplevel >= 3" },
-            { "JMSSA_MG34_Rifle", "", 150000, 75000, "call life_coplevel >= 3" }
+            { "EAW_C96_Carbine", "", 35000, 17500, "" }, // call life_coplevel >= 1
+            { "JMSSA_WebleyVI_pistol", "", 35000, 17500, "" }, // call life_coplevel >= 1 
+            { "JMSSA_lugerP08a1pistol", "", 30000, 15000, "" }, // call life_coplevel >= 1
+            { "EAW_Hanyang_Bayonet", "", 15000, 7500, "" }, // call life_coplevel >= 1
+            { "EAW_Hanyang88_Base", "", 35000, 17500, "" }, // call life_coplevel >= 1
+            { "JMSSA_emp35_Rifle", "", 40000, 20000, "" }, // call life_coplevel >= 1
+            { "EAW_Type24_Rifle_Base", "", 35000, 17500, "" }, // call life_coplevel >= 2
+            { "EAW_C96_Auto", "", 35000, 17500, "" }, // call life_coplevel >= 2
+            { "EAW_C96_Auto_Carbine", "", 35000, 17500, "" }, // call life_coplevel >= 2
+            { "EAW_MP28", "", 35000, 17500, "" }, // call life_coplevel >= 2
+            { "EAW_FN30_Base", "", 35000, 17500, "" }, // call life_coplevel >= 2
+            { "JMSSA_mp40_Rifle", "", 70000, 35000, "" }, // call life_coplevel >= 3
+            { "EAW_ZB26_Base", "", 100000, 50000, "" }, // call life_coplevel >= 3
+            { "EAW_Type95", "", 100000, 50000, "" }, // call life_coplevel >= 3
+            { "JMSSA_MG34_Rifle", "", 150000, 75000, "" } // call life_coplevel >= 3
         };
         mags[] = {
             { "JMSSA_6Rnd_455", "", 250, 125, "" }, //webley vi
