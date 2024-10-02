@@ -88,7 +88,8 @@ if (LIFE_SETTINGS(getNumber,"save_civilian_position_restart") isEqualTo 1) then 
 /* Map-based server side initialization. */
 master_group attachTo[bank_obj,[0,0,0]];
 
-{
+/* Disable hospital spawn (the building is not period accurate)
+ {
     _hs = createVehicle ["Land_Hospital_main_F", [0,0,0], [], 0, "NONE"];
     _hs setDir (markerDir _x);
     _hs setPosATL (getMarkerPos _x);
@@ -114,6 +115,7 @@ master_group attachTo[bank_obj,[0,0,0]];
         };
     };
 } forEach ["hospital_2","hospital_3"];
+*/
 
 {
     if (!isPlayer _x) then {
@@ -183,12 +185,13 @@ publicVariable "TON_fnc_playtime_values_request";
 
 
 /* Setup the federal reserve building(s) */
-private _vaultHouse = [[["Altis", "Land_Research_house_V1_F"], ["Tanoa", "Land_Medevac_house_V1_F"]]] call TON_fnc_terrainSort;
+private _vaultHouse = [[["Altis", "Land_Research_house_V1_F"], ["Tanoa", "Land_Medevac_house_V1_F"], ["EAW_Map", "land_EAW_WestBuilding_8"]]] call TON_fnc_terrainSort;
 private _altisArray = [16019.5,16952.9,0];
 private _tanoaArray = [11074.2,11501.5,0.00137329];
-private _pos = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
+private _eawArray = [918.5,18069.2,0];
+private _pos = [[["Altis", _altisArray], ["Tanoa", _tanoaArray], ["EAW_Map", _eawArray]]] call TON_fnc_terrainSort;
 
-_dome = nearestObject [_pos,"Land_Dome_Big_F"];
+_dome = nearestObject [_pos,"land_EAW_WestBuilding_14"];
 _rsb = nearestObject [_pos,_vaultHouse];
 
 for "_i" from 1 to 3 do {_dome setVariable [format ["bis_disabled_Door_%1",_i],1,true]; _dome animateSource [format ["Door_%1_source", _i], 0];};
