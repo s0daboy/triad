@@ -14,7 +14,7 @@ class Loadouts {
     // COP
     class WEST {
         uniform[] = {
-            {"EAW_Chinese_Uniform", "call life_copLevel >= 0"}
+            {"EAW_Chinese_Uniform_Major", "call life_copLevel >= 0"}
         };
         headgear[] = {
             {"EAW_Chinese_VisorCap_Blue", "call life_copLevel >= 0"}
@@ -32,8 +32,8 @@ class Loadouts {
         items[] = {};
         linkedItems[] = {
             {"ItemMap", "call life_copLevel >= 0"},
-            {"ItemCompass", "call life_copLevel >= 0"},
-            {"ItemWatch", "call life_copLevel >= 0"}
+            {"NORTH_SOV_Compass", "call life_copLevel >= 0"},
+            {"NORTH_FIN_Watch", "call life_copLevel >= 0"}
         };
     };
 
@@ -57,8 +57,8 @@ class Loadouts {
         items[] = {};
         linkedItems[] = {
             {"ItemMap", ""},
-            {"ItemCompass", ""},
-            {"ItemWatch", ""}
+            {"NORTH_SOV_Compass", ""},
+            {"NORTH_FIN_Watch", ""}
         };
     };
 
@@ -77,8 +77,8 @@ class Loadouts {
         };
         linkedItems[] = {
             {"ItemMap", "call life_medicLevel >= 1"},
-            {"ItemCompass", "call life_medicLevel >= 1"},
-            {"ItemWatch", "call life_medicLevel >= 1"}
+            {"NORTH_SOV_Compass", "call life_medicLevel >= 1"},
+            {"NORTH_FIN_Watch", "call life_medicLevel >= 1"}
         };
     };
 };

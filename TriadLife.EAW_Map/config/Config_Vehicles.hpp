@@ -197,7 +197,9 @@ class CarShops {
             { "EAW_Dodge1936_Pickup_Military_ROC", "" },
             { "EAW_Dodge1936_Pickup_Military_Ammo_ROC", "" },
             { "EAW_Dodge1936_Pickup_Military_Fuel_ROC", "" },
-            { "JMSSA_veh_opelblitz_ambul_DAK_F", "" } //fix colors
+            { "JMSSA_veh_opelblitz_ambul_DAK_F", "" }, //fix colors
+            { "peugeot_1914", "" },
+            { "JMSSA_veh_sdkfz251C4_DAK_F", "" } //probably remove - too OP/OOP
         };
     };
 
@@ -1275,6 +1277,28 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" }
 		};
     };
+
+    class peugeot_1914 {
+        vItemSpace = 100;
+        conditions = "playerSide isEqualTo west";
+        price = 250000;
+        textures[] = {};
+    };
+
+    class JMSSA_veh_sdkfz251C4_DAK_F {
+        vItemSpace = 200;
+        conditions = "playerSide isEqualTo west";
+        price = 750000;
+        textures[] = {
+            { "Grey", "cop", {
+				"\JMSSA_veh_gr\sdkfz251\data\hull_L_grey_co.paa",
+                "\JMSSA_veh_gr\sdkfz251\data\hull_R_grey_co.paa",
+                "\JMSSA_veh_gr\sdkfz251\data\int_grey_co.paa",
+                "\JMSSA_veh_gr\sdkfz251\data\wheel_grey_co.paa"
+            }, "" }
+		};
+    };
+
 
     class Berlier_cba {
         vItemSpace = 450;

@@ -26,6 +26,7 @@ class WeaponShops {
         side = "civ";
         conditions = "license_civ_gun";
         items[] = {
+            { "JMSSA_w_bino_Zeiss6x30", "", 150, 75, "" },
             { "WBK_BrassKnuckles", "", 10000, 5000, "" },
             { "Knife_m3", "", 15000, 7500, "" },
             { "JMSSA_mle1892_pistol", "", 25000, 12500, "" },
@@ -47,6 +48,7 @@ class WeaponShops {
         side = "civ";
         conditions = "license_civ_rebel";
         items[] = {
+            { "JMSSA_w_bino_Zeiss6x30", "", 150, 575, "" },
             { "WBK_BrassKnuckles", "", 10000, 5000, "" },
             { "EAW_Dao", "", 15000, 7500, "" },
             { "WBK_survival_weapon_3", "", 5000, 2500, "" },
@@ -76,6 +78,7 @@ class WeaponShops {
         side = "civ";
         conditions = "";
         items[] = {
+            { "JMSSA_w_bino_Zeiss6x30", "", 150, 75, "" },
             { "WBK_BrassKnuckles", "", 10000, 5000, "" },
             { "Axe", "", 10000, 5000, "" },
             { "WBK_Axe", "", 15000, 7500, "" },
@@ -102,9 +105,9 @@ class WeaponShops {
             { "EAW_Hanyang88_Magazine", "", 250, 125, "" },
             { "JMSSA_5Rnd_8x50R_D", "", 250, 125, "" }, //for berthier carbine .. there are 3 other ammo types idk what they do
             { "JMSSA_25Rnd_9x19", "", 250, 125, "" }, //beretta18
-            { "ThompsonM1_20rnd_mags", "", 250, 125, "" }, //tommygun
-            { "ThompsonM1_30rnd_mags", "", 250, 125, "" }, //tommygun
-            { "ThompsonM1_50rnd_mags", "", 250, 125, "" }, //tommygun
+            { "JMSSA_20Rnd_45ACP", "", 250, 125, "" }, //tommygun
+            { "JMSSA_30Rnd_45ACP", "", 250, 125, "" }, //tommygun
+            { "JMSSA_50Rnd_45ACP", "", 250, 125, "" }, //tommygun
             { "JMSSA_47Rnd_770x56", "", 250, 125, "" }, //lewis
             { "JMSSA_20Rnd_65x52", "", 250, 125, "" }, //breda
             { "JMSSA_25Rnd_750x54", "", 250, 125, "" }, //mac2429
@@ -120,11 +123,10 @@ class WeaponShops {
         conditions = "";
         items[] = {
             { "Pipe_aluminium", "", 5000, 2500, "" },
-            { "Binocular", "", 150, 75, "" },
-            { "ItemGPS", "", 100, 50, "" },
+            { "JMSSA_w_bino_Zeiss6x30", "", 150, 75, "" },
             { "ItemMap", "", 50, 25, "" },
-            { "ItemCompass", "", 50, 25, "" },
-            { "ItemWatch", "", 50, 25, "" },
+            { "NORTH_FIN_Watch", "", 150, 75, "" },
+            { "NORTH_SOV_Compass", "", 150, 75, "" },
             { "FirstAidKit", "", 150, 75, "" }
         };
         mags[] = {};
@@ -137,11 +139,10 @@ class WeaponShops {
         conditions = "";
         items[] = {
             { "Pipe_aluminium", "", 5000, 2500, "" },
-            { "Binocular", "", 750, 75, "" },
-            { "ItemGPS", "", 500, 50, "" },
+            { "JMSSA_w_bino_Zeiss6x30", "", 750, 75, "" },
             { "ItemMap", "", 250, 25, "" },
-            { "ItemCompass", "", 250, 25, "" },
-            { "ItemWatch", "", 250, 25, "" },
+            { "NORTH_FIN_Watch", "", 150, 75, "" },
+            { "NORTH_SOV_Compass", "", 150, 75, "" },
             { "FirstAidKit", "", 750, 75, "" }
         };
         mags[] = {};
@@ -154,8 +155,11 @@ class WeaponShops {
         side = "cop";
         conditions = "";
         items[] = {
-            { "Binocular", "", 150, 75, "" },
-            { "ItemGPS", "", 100, 50, "" },
+            { "ItemMap", "", 250, 25, "" },
+            { "NORTH_FIN_Watch", "", 150, 75, "" },
+            { "NORTH_SOV_Compass", "", 150, 75, "" },
+            { "JMSSA_w_bino_No2Mk2", "", 150, 75, "" },
+            { "NORTH_Binocular_Huet", "", 150, 75, "" },
             { "FirstAidKit", "", 150, 75, "" },
             { "WBK_BrassKnuckles", "", 10000, 5000, "" },
             { "Police_Bat", "", 10000, 5000, "" },
@@ -198,10 +202,12 @@ class WeaponShops {
         side = "med";
         conditions = "";
         items[] = {
-            { "Police_Bat", "", 10000, 5000, "" },
-            { "ItemGPS", "", 100, 50, "" },
-            { "Binocular", "", 150, 75, "" },
-            { "FirstAidKit", "", 150, 75, "" }
+            { "ItemMap", "", 250, 25, "" },
+            { "NORTH_FIN_Watch", "", 150, 75, "" },
+            { "NORTH_SOV_Compass", "", 150, 75, "" },
+            { "JMSSA_w_bino_Zeiss6x30", "", 150, 75, "" },
+            { "FirstAidKit", "", 150, 75, "" },
+            { "Police_Bat", "", 10000, 5000, "" }
         };
         mags[] = {};
         accs[] = {};

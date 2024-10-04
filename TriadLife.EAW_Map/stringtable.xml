@@ -88,7 +88,7 @@
 			<Chinesesimp>叛军商店</Chinesesimp>
         </Key>
         <Key ID="STR_Shops_C_Diving">
-            <Original>Steve's Diving Shop</Original>
+            <Original>Diving Shop</Original>
             <Czech>Steve je potápění obchod</Czech>
             <French>Vêtements de plongée de Steve</French>
             <Spanish>Tienda de Buceo</Spanish>
@@ -100,7 +100,7 @@
 			<Chinesesimp>潜水商店</Chinesesimp>
         </Key>
         <Key ID="STR_Shops_C_Gun">
-            <Original>Billy Joe's Clothing</Original>
+            <Original>Clothing</Original>
             <Czech>Billy Joe oblečení</Czech>
             <Spanish>Tienda de Ropa de Billy Joe</Spanish>
             <Russian></Russian>
@@ -112,7 +112,7 @@
 			<Chinesesimp>服装商店</Chinesesimp>
         </Key>
         <Key ID="STR_Shops_W_Gun">
-            <Original>Billy Joe's Firearms</Original>
+            <Original>Firearms</Original>
             <Czech>Billy Joe Střelné zbraně</Czech>
             <Spanish>Tienda de Armas de Billy Joe</Spanish>
             <Russian></Russian>
@@ -196,7 +196,7 @@
 			<Chinesesimp>食品商</Chinesesimp>
         </Key>
         <Key ID="STR_Shops_Coffee">
-            <Original>Gyro's Coffee</Original>
+            <Original>Coffee</Original>
             <Czech>gyros Coffee</Czech>
             <Spanish>Cafetería de Gyro</Spanish>
             <Russian></Russian>
@@ -208,7 +208,7 @@
 			<Chinesesimp>咖啡店</Chinesesimp>
         </Key>
         <Key ID="STR_Shops_DrugDealer">
-            <Original>Tonic's Narcotics</Original>
+            <Original>Narcotics</Original>
             <Czech>Tonic je narkotika</Czech>
             <Spanish>Narcotraficante</Spanish>
             <Russian></Russian>
@@ -256,7 +256,7 @@
 			<Chinesesimp>玻璃贸易商</Chinesesimp>
         </Key>
         <Key ID="STR_Shops_Minerals">
-            <Original>Altis Industrial Trader</Original>
+            <Original>Industrial Trader</Original>
             <Czech>Altis Industrial Trader</Czech>
             <Spanish>Comerciante Industrial</Spanish>
             <Russian></Russian>
@@ -268,7 +268,7 @@
 			<Chinesesimp>铁/铜贸易</Chinesesimp>
         </Key>
         <Key ID="STR_Shops_Cop">
-            <Original>APD Item Shop</Original>
+            <Original>Police Item Shop</Original>
             <Czech>APD Item Shop</Czech>
             <Spanish>Equipamiento Policial</Spanish>
             <Russian></Russian>
@@ -280,7 +280,7 @@
 			<Chinesesimp>警察物品店</Chinesesimp>
         </Key>
         <Key ID="STR_Shops_Cement">
-            <Original>Juan's Cement Laying</Original>
+            <Original>Cement Laying</Original>
             <Czech>Juanovo Cement Pokládka</Czech>
             <Spanish>Fabrica de Cemento de Juan</Spanish>
             <Russian></Russian>
@@ -292,7 +292,7 @@
 			<Chinesesimp>水泥贸易商</Chinesesimp>
         </Key>
         <Key ID="STR_Shops_Gold">
-            <Original>Cash 4 Gold</Original>
+            <Original>Cash for Gold</Original>
             <Czech>Peněžní 4 Gold</Czech>
             <Spanish>Comprador de Oro</Spanish>
             <Russian></Russian>
@@ -328,7 +328,7 @@
 			<Chinesesimp>食盐贸易商</Chinesesimp>
         </Key>
         <Key ID="STR_Shop_Station_Coffee">
-            <Original>Fuel Station Coffee</Original>
+            <Original>Fuel Station Shop</Original>
             <Czech>Palivo Coffee Station</Czech>
             <French>Café de la Station service</French>
             <Spanish>Cafeteria de Gasolinera</Spanish>
@@ -11695,7 +11695,7 @@
 			<Chinesesimp>警察制服</Chinesesimp>
         </Key>
         <Key ID="STR_C_EMS_uniforms">
-            <Original>EMS Uniform</Original>
+            <Original>Doctor Uniform</Original>
             <Czech>EMS Uniform</Czech>
             <Spanish>EMS Uniform</Spanish>
             <Russian>EMS Uniform</Russian>

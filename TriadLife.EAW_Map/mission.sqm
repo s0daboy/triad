@@ -12135,7 +12135,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Armament"",life_fnc_weaponShopMenu,""gang"",0,false,false,"""",'  _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0;  !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this addAction[localize""STR_Shops_C_Gang"",life_fnc_clothingMenu,""gang_clothing"",0,false,false,"""",'  _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0;  !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Gang Armament""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Armament"",life_fnc_weaponShopMenu,""gang"",0,false,false,"""",'  _b = (nearestObjects[getPosATL player,[""Land_House_Small_02_F""],25]) select 0;  !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this addAction[localize""STR_Shops_C_Gang"",life_fnc_clothingMenu,""gang_clothing"",0,false,false,"""",'  _b = (nearestObjects[getPosATL player,[""Land_House_Small_02_F""],25]) select 0;  !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Gang Armament""];";
 			};
 			id=637;
 			type="Land_Pallet_MilBoxes_F";
@@ -12205,7 +12205,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Marijuana"",life_fnc_processAction,""marijuana"",0,false,false,"""",'  _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0;  life_inv_cannabis > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Marijuana Processing""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Marijuana"",life_fnc_processAction,""marijuana"",0,false,false,"""",'  _b = (nearestObjects[getPosATL player,[""Land_House_Small_02_F""],25]) select 0;  life_inv_cannabis > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Marijuana Processing""];";
 				name="mari_processor";
 			};
 			id=639;
@@ -13133,7 +13133,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Shops_Gang"",life_fnc_virt_menu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Shops_Gang"",life_fnc_virt_menu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_House_Small_02_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} '];";
 			};
 			id=665;
 			type="Land_InfoStand_V1_F";
@@ -13169,7 +13169,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Armament"",life_fnc_weaponShopMenu,""gang"",0,false,false,"""",'  _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0;  !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this addAction[localize""STR_Shops_C_Gang"",life_fnc_clothingMenu,""gang_clothing"",0,false,false,"""",'  _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0;  !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Gang Armament""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Armament"",life_fnc_weaponShopMenu,""gang"",0,false,false,"""",'  _b = (nearestObjects[getPosATL player,[""Land_House_Small_02_F""],25]) select 0;  !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this addAction[localize""STR_Shops_C_Gang"",life_fnc_clothingMenu,""gang_clothing"",0,false,false,"""",'  _b = (nearestObjects[getPosATL player,[""Land_House_Small_02_F""],25]) select 0;  !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Gang Armament""];";
 			};
 			id=667;
 			type="Land_Pallet_MilBoxes_F";
@@ -13239,7 +13239,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Cocaine"",life_fnc_processAction,""cocaine"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; life_inv_cocaineUnprocessed > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Cocaine Processing""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Cocaine"",life_fnc_processAction,""cocaine"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_House_Small_02_F""],25]) select 0; life_inv_cocaineUnprocessed > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Cocaine Processing""];";
 				name="coke_processor";
 			};
 			id=669;
@@ -14171,7 +14171,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Shops_Gang"",life_fnc_virt_menu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Shops_Gang"",life_fnc_virt_menu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_House_Small_02_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} '];";
 			};
 			id=695;
 			type="Land_InfoStand_V1_F";
@@ -14207,7 +14207,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Armament"",life_fnc_weaponShopMenu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this addAction[localize""STR_Shops_C_Gang"",life_fnc_clothingMenu,""gang_clothing"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Gang Armament""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Armament"",life_fnc_weaponShopMenu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_House_Small_02_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this addAction[localize""STR_Shops_C_Gang"",life_fnc_clothingMenu,""gang_clothing"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_House_Small_02_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Gang Armament""];";
 			};
 			id=697;
 			type="Land_Pallet_MilBoxes_F";
@@ -14277,7 +14277,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Heroin"",life_fnc_processAction,""heroin"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; life_inv_heroinUnprocessed > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Heroin Processing""];";
+				init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Process_Heroin"",life_fnc_processAction,""heroin"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_House_Small_02_F""],25]) select 0; life_inv_heroinUnprocessed > 0 && !life_is_processing && !life_action_inUse && !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} && playerSide isEqualTo civilian ']; this setVariable [""realname"",""Heroin Processing""];";
 				name="heroin_processor";
 			};
 			id=699;
@@ -15049,7 +15049,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Shops_Gang"",life_fnc_virt_menu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_u_Barracks_V2_F"",""Land_i_Barracks_V2_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} '];";
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Shops_Gang"",life_fnc_virt_menu,""gang"",0,false,false,"""",' _b = (nearestObjects[getPosATL player,[""Land_House_Small_02_F""],25]) select 0; !isNil {_b getVariable ""gangOwner""} && {(_b getVariable ""gangOwner"") == (group player)} '];";
 			};
 			id=725;
 			type="Land_InfoStand_V1_F";
