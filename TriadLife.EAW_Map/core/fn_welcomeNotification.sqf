@@ -26,8 +26,9 @@ _text2 = _display displayCtrl 1102;
 
 _message = "";
 _message = _message + "<t align='center' size='8' shadow='0'>Triad Life</t><br /><br />";
-_message = _message + "Thanks to the hard work of modders who made this possible, especially Hipper (East Asia War), AsYetUntitled Life team, and MANY more. Full list of mods/authors TBA, see mod pages on steam for more info about their amazing work.<br /><br />";
-_message = _message + "<a color='#00DFFF'>•</a> Discord: <a href='https://discord.gg/SYEyMrFjgd' color='#56BDD6'> https://discord.gg/ajGUDSH</a><br /><br />";
+_message = _message + "Thanks for joining the playtest! Many features are unfinished, planned for removal or have big changes planned for them. Lots of content TBA. Feedback and suggestions are welcome.<br /><br />";
+_message = _message + "East Asia War map and assets by Hipper. Life mission by Tonic/AYU team. Full list of mods/authors TBA, see mod pages on steam for more info about their amazing work!<br /><br />";
+_message = _message + "<a color='#00DFFF'>•</a> Discord: <a href='https://discord.gg/SYEyMrFjgd' color='#56BDD6'> https://discord.gg/SYEyMrFjgd</a><br /><br />";
 _message = _message + "Your feedback is welcome. Thanks for playing! <br />-<a color='#FF0000'>Triad Life</a> Team.<br />";
 
 //Fill only the first text

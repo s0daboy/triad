@@ -127,7 +127,10 @@ class WeaponShops {
             { "ItemMap", "", 50, 25, "" },
             { "NORTH_FIN_Watch", "", 150, 75, "" },
             { "NORTH_SOV_Compass", "", 150, 75, "" },
-            { "FirstAidKit", "", 150, 75, "" }
+            { "FirstAidKit", "", 150, 75, "" },
+            { "JMSSA_brit_scarfSc_nvg", "", 1900, "" },
+            { "JMSSA_brit_scarfScKh_nvg", "Khaki Scarf", 1900, "" },
+            { "JMSSA_brit_scarfScW_nvg", "White Scarf", 1900, "" }
         };
         mags[] = {};
         accs[] = {};

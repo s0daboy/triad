@@ -84,8 +84,8 @@ class Clothing {
             { "H_Hat_checker", "", 150, "" },
             { "H_Hat_grey", "", 150, "" },
             { "H_Hat_tan", "", 150, "" },
-            { "H_Hat_StrawHat", "", 150, "" },
-            { "H_Hat_StrawHat_dark", "", 150, "" },
+            // { "H_Hat_StrawHat", "Straw Hat", 150, "" }, //doesnt like these .. missing image or something
+            // { "H_Hat_StrawHat_dark", "Dark Straw Hat", 150, "" },
             { "JMSSA_civ_ascotCap_blackCh", "", 150, "" },
             { "JMSSA_civ_ascotCap_brownCh", "", 150, "" },
             { "JMSSA_civ_ascotCap_dark", "", 150, "" },
@@ -131,6 +131,8 @@ class Clothing {
             { "JMSSA_aus_hatL2_khaki_NA", "", 150, "" }, //maybe
             { "JMSSA_brit_hat2_NA", "", 150, "" }, //maybe
             { "JMSSA_brit_hat2_brown_NA", "", 150, "" }, //maybe
+            { "H_Hat_Safari_olive_F", "", 150, "" }, //maybe
+            { "H_Hat_Safari_sand_F", "", 150, "" }, //maybe
             { "sab_wwi_ind_cap", "", 150, "" }, //maybe
             { "rds_rocker_hair1", "", 150, "" }, //maybe
             { "rds_rocker_hair2", "", 150, "" }, //maybe
@@ -203,7 +205,8 @@ class Clothing {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
             { "EAW_Glasses", "", 25, "" },
             { "G_JMSSA_Civ_CigaretteL", "", 1900, "" },
-            { "G_JMSSA_Civ_CigaretteR", "", 1900, "" }
+            { "G_JMSSA_Civ_CigaretteR", "", 1900, "" },
+            { "G_JMSSA_ITA_t35_gasmask", "", 1900, "" }
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
@@ -362,11 +365,11 @@ class Clothing {
             { "G_Bandanna_blk", "", 1900, "" },
             { "G_Bandanna_oli", "", 1900, "" },
             { "G_Bandanna_tan", "", 1900, "" },
-            { "G_JMSSA_GB_scarfHigh", "", 1900, "" },
-            { "G_JMSSA_GB_scarfSc", "", 1900, "" },
-            { "G_JMSSA_GB_scarfSc_khaki", "", 1900, "" },
-            { "G_JMSSA_GB_scarfSc_khaki_white", "", 1900, "" },
-            { "G_JMSSA_GB_scarfSc_khaki_red", "", 1900, "" }
+            { "G_JMSSA_GB_scarfHigh", "", 1900, "" }
+            // { "G_JMSSA_GB_scarfSc", "", 1900, "" },
+            // { "G_JMSSA_GB_scarfSc_khaki", "Khaki Scarf", 1900, "" },
+            // { "G_JMSSA_GB_scarfSc_khaki_white", "White Scarf", 1900, "" },
+            // { "G_JMSSA_GB_scarfSc_khaki_red", "Red Scarf", 1900, "" }
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
@@ -434,8 +437,8 @@ class Clothing {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
             { "H_NORTH_CIV_Koivistolainen_1", "", 150, "" },
             { "H_NORTH_CIV_Koivistolainen_5", "", 150, "" },
-            { "G_JMSSA_GB_arab_scarfFace_brown", "", 1900, "" },
-            { "G_JMSSA_GB_arab_scarfFace_white", "", 1900, "" },
+            // { "G_JMSSA_GB_arab_scarfFace_brown", "Brown Scarf", 1900, "" }, // doesnt like these
+            // { "G_JMSSA_GB_arab_scarfFace_white", "White Scarf", 1900, "" },
             { "JMSSA_brit_sas_scarf", "", 150, "" }, // cool head bandana
             { "JMSSA_brit_woolhat", "", 150, "" }, //beanie
             { "JMSSA_brit_commando_cap", "", 150, "" }, //beanie
@@ -443,7 +446,8 @@ class Clothing {
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
-            { "G_JMSSA_GB_arab_scarfFace", "", 1900, "" },
+            { "G_JMSSA_arab_scarf", "", 1900, "" },
+            { "G_JMSSA_arab_scarfFace", "", 1900, "" }
         };
         vests[] = {
             { "NONE", $STR_C_Remove_vests, 0, "" },
@@ -489,6 +493,7 @@ class Clothing {
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
             { "sab_wwi_goggles", "", 150, "" },
+            { "G_JMSSA_fra_des_googles", "", 150, "" },
             { "G_JMSSA_GB_des_googles_old", "", 150, "" },
             { "G_JMSSA_GB_des_googles", "", 150, "" },
             { "G_JMSSA_GB_headset", "", 150, "" }
