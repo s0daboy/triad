@@ -96,7 +96,10 @@ class WeaponShops {
             { "JMSSA_thompson1928_rifle", "", 50000, 25000, "" },
             { "JMSSA_Lewis_Rifle", "", 100000, 50000, "" },
             { "JMSSA_breda30_Rifle", "", 100000, 50000, "" },
-            { "JMSSA_mac2429_Rifle", "", 100000, 50000, "" }
+            { "JMSSA_mac2429_Rifle", "", 100000, 50000, "" },
+            { "JMSSA_brit_scarfSc_nvg", "", 1900, "" },
+            { "JMSSA_brit_scarfScKh_nvg", "Khaki Scarf", 1900, "" },
+            { "JMSSA_brit_scarfScW_nvg", "White Scarf", 1900, "" }
         };
         mags[] = {
             { "JMSSA_7Rnd_9x17", "", 250, 125, "" }, //beretta m1934
@@ -127,10 +130,7 @@ class WeaponShops {
             { "ItemMap", "", 50, 25, "" },
             { "NORTH_FIN_Watch", "", 150, 75, "" },
             { "NORTH_SOV_Compass", "", 150, 75, "" },
-            { "FirstAidKit", "", 150, 75, "" },
-            { "JMSSA_brit_scarfSc_nvg", "", 1900, "" },
-            { "JMSSA_brit_scarfScKh_nvg", "Khaki Scarf", 1900, "" },
-            { "JMSSA_brit_scarfScW_nvg", "White Scarf", 1900, "" }
+            { "FirstAidKit", "", 150, 75, "" }
         };
         mags[] = {};
         accs[] = {};
