@@ -26,6 +26,7 @@ class WeaponShops {
         side = "civ";
         conditions = "license_civ_gun";
         items[] = {
+            { "rds_weap_latarka_janta", "", 150, 75, "" },
             { "JMSSA_w_bino_Zeiss6x30", "", 150, 75, "" },
             { "WBK_BrassKnuckles", "", 10000, 5000, "" },
             { "Knife_m3", "", 15000, 7500, "" },
@@ -48,6 +49,7 @@ class WeaponShops {
         side = "civ";
         conditions = "license_civ_rebel";
         items[] = {
+            { "rds_weap_latarka_janta", "", 150, 75, "" },
             { "JMSSA_w_bino_Zeiss6x30", "", 150, 575, "" },
             { "WBK_BrassKnuckles", "", 10000, 5000, "" },
             { "EAW_Dao", "", 15000, 7500, "" },
@@ -78,6 +80,7 @@ class WeaponShops {
         side = "civ";
         conditions = "";
         items[] = {
+            { "rds_weap_latarka_janta", "", 150, 75, "" },
             { "JMSSA_w_bino_Zeiss6x30", "", 150, 75, "" },
             { "WBK_BrassKnuckles", "", 10000, 5000, "" },
             { "Axe", "", 10000, 5000, "" },
@@ -97,9 +100,20 @@ class WeaponShops {
             { "JMSSA_Lewis_Rifle", "", 100000, 50000, "" },
             { "JMSSA_breda30_Rifle", "", 100000, 50000, "" },
             { "JMSSA_mac2429_Rifle", "", 100000, 50000, "" },
-            { "JMSSA_brit_scarfSc_nvg", "", 1900, "" },
-            { "JMSSA_brit_scarfScKh_nvg", "Khaki Scarf", 1900, "" },
-            { "JMSSA_brit_scarfScW_nvg", "White Scarf", 1900, "" }
+            { "G_NORTH_FIN_Gloves_leather", "", 5000, 2500, "" },
+            { "G_NORTH_FIN_Gloves_leather_2", "", 5000, 2500, "" },
+            { "G_NORTH_FIN_Gloves", "", 3000, 1500, "" },
+            { "G_NORTH_FIN_Gloves_2", "", 3000, 1500, "" },
+            { "G_NORTH_FIN_Gloves_3", "", 3000, 1500, "" },
+            { "G_NORTH_FIN_Gloves_4", "", 3000, 1500, "" },
+            { "JMSSA_brit_scarfHigh_nvg", "", 3000, 1500, "" },
+            { "JMSSA_brit_scarfSc_nvg", "", 3000, 1500, "" },
+            { "JMSSA_brit_scarfScKh_nvg", "", 3000, 1500, "" },
+            { "JMSSA_brit_scarfScW_nvg", "", 3000, 1500, "" },
+            { "JMSSA_fra_scarf_nvg", "", 500, 250, "" },
+            { "JMSSA_fra_scarf_w_nvg", "", 500, 250, "" }
+            { "JMSSA_civ_CigaretteL_nvg", "", 500, 250, "" },
+            { "JMSSA_civ_CigaretteR_nvg", "", 500, 250, "" }
         };
         mags[] = {
             { "JMSSA_7Rnd_9x17", "", 250, 125, "" }, //beretta m1934
@@ -125,12 +139,13 @@ class WeaponShops {
         side = "civ";
         conditions = "";
         items[] = {
-            { "Pipe_aluminium", "", 5000, 2500, "" },
+            { "rds_weap_latarka_janta", "", 150, 75, "" },
             { "JMSSA_w_bino_Zeiss6x30", "", 150, 75, "" },
             { "ItemMap", "", 50, 25, "" },
             { "NORTH_FIN_Watch", "", 150, 75, "" },
             { "NORTH_SOV_Compass", "", 150, 75, "" },
-            { "FirstAidKit", "", 150, 75, "" }
+            { "FirstAidKit", "", 150, 75, "" },
+            { "Pipe_aluminium", "", 5000, 2500, "" }
         };
         mags[] = {};
         accs[] = {};
@@ -141,12 +156,13 @@ class WeaponShops {
         side = "";
         conditions = "";
         items[] = {
-            { "Pipe_aluminium", "", 5000, 2500, "" },
+            { "rds_weap_latarka_janta", "", 150, 75, "" },
             { "JMSSA_w_bino_Zeiss6x30", "", 750, 75, "" },
             { "ItemMap", "", 250, 25, "" },
             { "NORTH_FIN_Watch", "", 150, 75, "" },
             { "NORTH_SOV_Compass", "", 150, 75, "" },
-            { "FirstAidKit", "", 750, 75, "" }
+            { "FirstAidKit", "", 750, 75, "" },
+            { "Pipe_aluminium", "", 5000, 2500, "" }
         };
         mags[] = {};
         accs[] = {};
@@ -161,6 +177,7 @@ class WeaponShops {
             { "ItemMap", "", 250, 25, "" },
             { "NORTH_FIN_Watch", "", 150, 75, "" },
             { "NORTH_SOV_Compass", "", 150, 75, "" },
+            { "rds_weap_latarka_janta", "", 150, 75, "" },
             { "JMSSA_w_bino_No2Mk2", "", 150, 75, "" },
             { "NORTH_Binocular_Huet", "", 150, 75, "" },
             { "FirstAidKit", "", 150, 75, "" },
@@ -205,10 +222,11 @@ class WeaponShops {
         side = "med";
         conditions = "";
         items[] = {
+            { "rds_weap_latarka_janta", "", 150, 75, "" },
+            { "JMSSA_w_bino_Zeiss6x30", "", 150, 75, "" },
             { "ItemMap", "", 250, 25, "" },
             { "NORTH_FIN_Watch", "", 150, 75, "" },
             { "NORTH_SOV_Compass", "", 150, 75, "" },
-            { "JMSSA_w_bino_Zeiss6x30", "", 150, 75, "" },
             { "FirstAidKit", "", 150, 75, "" },
             { "Police_Bat", "", 10000, 5000, "" }
         };
