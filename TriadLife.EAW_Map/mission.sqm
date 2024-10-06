@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1451;
+		nextID=1452;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17650.773,100.40562,11096.489};
-		dir[]={-0.75359887,-0.44594762,-0.48302811};
-		up[]={-0.37545928,0.89505047,-0.24065425};
-		aside[]={-0.53965771,-9.2227128e-007,0.84194636};
+		pos[]={18051.674,58.354435,11473.914};
+		dir[]={-0.72377086,-0.65971661,0.20251332};
+		up[]={-0.635315,0.75149649,0.17776294};
+		aside[]={0.2694608,-5.1193638e-007,0.96304423};
 	};
 };
 binarizationWanted=0;
@@ -293,7 +293,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=610;
+		items=611;
 		class Item0
 		{
 			dataType="Marker";
@@ -334,9 +334,10 @@ class Mission
 		class Item4
 		{
 			dataType="Marker";
-			position[]={17408.504,3.4152761,10382.638};
+			position[]={17419.529,3.5188255,10389.751};
 			name="civ_spawn_1";
 			type="Empty";
+			angle=311.92334;
 			id=5;
 		};
 		class Item5
@@ -365,7 +366,7 @@ class Mission
 			position[]={17702.063,8.4831123,11395.37};
 			name="cop_spawn_1";
 			type="Empty";
-			angle=147.44865;
+			angle=147.44862;
 			id=8;
 			atlOffset=5.053112;
 		};
@@ -436,7 +437,7 @@ class Mission
 		class Item14
 		{
 			dataType="Marker";
-			position[]={17786.232,3.4300001,11426.453};
+			position[]={17780.217,3.4300001,11427.57};
 			name="Correctional_Facility";
 			text="@STR_MAR_Altis_Corrections";
 			type="mil_dot";
@@ -630,7 +631,7 @@ class Mission
 		class Item32
 		{
 			dataType="Marker";
-			position[]={17391.514,11.671347,10441.018};
+			position[]={17410.195,11.671347,10425.899};
 			name="car1";
 			type="c_car";
 			colorName="ColorWhite";
@@ -661,7 +662,7 @@ class Mission
 		class Item35
 		{
 			dataType="Marker";
-			position[]={17442.039,3.8005786,10459.413};
+			position[]={17443.301,3.4300001,10458.466};
 			name="Gen";
 			text="@STR_MAR_General_Store";
 			type="c_unknown";
@@ -784,12 +785,11 @@ class Mission
 		class Item47
 		{
 			dataType="Marker";
-			position[]={17596.5,3.4300001,10628.028};
+			position[]={17424.969,3.4317694,10446.483};
 			name="Gen_3_1";
 			text="@STR_MAR_Market";
 			type="c_unknown";
 			colorName="ColorGreen";
-			angle=290.15305;
 			id=48;
 		};
 		class Item48
@@ -858,7 +858,7 @@ class Mission
 		class Item54
 		{
 			dataType="Marker";
-			position[]={17391.475,11.671015,10440.979};
+			position[]={17410.156,11.671015,10425.86};
 			name="car1_1";
 			text="@STR_MAR_Car_Shop";
 			type="c_car";
@@ -890,7 +890,7 @@ class Mission
 		class Item57
 		{
 			dataType="Marker";
-			position[]={17362.221,3.4300001,10367.373};
+			position[]={17385.174,3.4300001,10434.101};
 			name="license_shop";
 			text="@STR_MAR_DMV";
 			type="c_unknown";
@@ -1329,7 +1329,7 @@ class Mission
 			position[]={17706.713,3.4300001,11387.186};
 			name="cop_car_1";
 			type="Empty";
-			angle=151.59016;
+			angle=151.59013;
 			id=99;
 		};
 		class Item98
@@ -1368,7 +1368,7 @@ class Mission
 			position[]={1998.1936,3.0514741,16921.611};
 			name="cop_air_1";
 			type="Empty";
-			angle=305.21832;
+			angle=305.21826;
 			id=103;
 		};
 		class Item102
@@ -1459,12 +1459,12 @@ class Mission
 		class Item110
 		{
 			dataType="Marker";
-			position[]={17414.861,5.4099998,10340.028};
+			position[]={18029.549,5.4099998,11511.886};
 			name="cop_ship_1";
 			type="Empty";
-			angle=120;
+			angle=180.12891;
 			id=112;
-			atlOffset=7.970787;
+			atlOffset=21.099487;
 		};
 		class Item111
 		{
@@ -1801,7 +1801,7 @@ class Mission
 			position[]={17772.389,3.4300001,11275.316};
 			name="car_g_1";
 			type="Empty";
-			angle=63.95163;
+			angle=63.951626;
 			id=143;
 		};
 		class Item142
@@ -2160,7 +2160,7 @@ class Mission
 		class Item175
 		{
 			dataType="Marker";
-			position[]={17386.162,3.4387228,10393.729};
+			position[]={17395.779,3.4300001,10448.121};
 			name="atm_marker_1";
 			type="loc_Tourism";
 			colorName="ColorGreen";
@@ -18583,8 +18583,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17394.244,3.4314392,10438.365};
-						angles[]={0,2.2201636,0};
+						position[]={17411.564,3.4468207,10424.401};
+						angles[]={6.2780342,5.3919778,6.2780509};
 					};
 					side="Civilian";
 					flags=4;
@@ -18597,7 +18597,6 @@ class Mission
 					};
 					id=1179;
 					type="EAW_Civ_1_White";
-					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18634,8 +18633,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17360.76,3.4314392,10366.706};
-						angles[]={0,1.0201463,0};
+						position[]={17391.666,3.4314389,10435.594};
+						angles[]={0,2.1316669,0};
 					};
 					side="Civilian";
 					flags=4;
@@ -18648,7 +18647,6 @@ class Mission
 					};
 					id=1180;
 					type="EAW_Civ_1_Grey";
-					atlOffset=2.3841858e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18875,19 +18873,31 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17406.453,1.3005135,10346.436};
-						angles[]={0,2.0289104,0};
+						position[]={18007.834,2.4225547,11513.559};
+						angles[]={0,4.9641171,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Boat_Shop"",life_fnc_vehicleShopMenu,[""cop_ship"",west,""cop_ship_1"",""cop"",""APD - Kavala District - Boat Store""],1.5,true,true,"""",""true"",5]; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Ship"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Ship"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""cop_ship_1""; life_garage_type = ""Ship""; },"""",0,false,false,"""",'playerSide isEqualTo west',5]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store',5];";
 						disableSimulation=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="EAW_Chinese_Uniform_Major";
+								isBackpack=0;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							headgear="EAW_Chinese_Cap_1";
+						};
 					};
 					id=1184;
 					type="EAW_Civ_1";
-					atlOffset=0.80900007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18963,6 +18973,7 @@ class Mission
 					};
 					id=1185;
 					type="EAW_Civ_1";
+					atlOffset=1.335144e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20696,8 +20707,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17595.457,3.4595766,10628.573};
-						angles[]={0,2.0181766,0};
+						position[]={17427.205,3.4314389,10448.689};
+						angles[]={0,3.9386411,0};
 					};
 					side="Civilian";
 					flags=4;
@@ -23307,7 +23318,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={17449.939,3.4753718,10986.192};
-						angles[]={-0,1.73778,0};
+						angles[]={0,1.73778,0};
 					};
 					side="Civilian";
 					flags=4;
@@ -25506,8 +25517,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17386.121,3.4394388,10393.789};
-						angles[]={0.0038397242,2.2201636,0.0061784657};
+						position[]={17396.479,3.4314389,10441.896};
+						angles[]={0,2.2201636,0};
 					};
 					side="Civilian";
 					flags=4;
@@ -25520,7 +25531,6 @@ class Mission
 					};
 					id=1392;
 					type="EAW_Civ_Robe_Blue";
-					atlOffset=0.007999897;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -28347,6 +28357,17 @@ class Mission
 			colorName="Color4_FD_F";
 			id=1450;
 			atlOffset=25.765362;
+		};
+		class Item610
+		{
+			dataType="Marker";
+			position[]={18006.275,-4.3169999,11513.866};
+			name="Police HQ_2";
+			text="Coast Guard";
+			type="mil_box";
+			colorName="Color4_FD_F";
+			id=1451;
+			atlOffset=6.0558319e-005;
 		};
 	};
 };

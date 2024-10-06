@@ -294,7 +294,7 @@ switch (_code) do {
                 };
             } else {
                 private _locked = locked _veh;
-                if (_veh in life_vehicles && {player distance _veh < 20}) then {
+                if (_veh in life_vehicles && {player distance _veh < 5}) then {
                     if (_locked isEqualTo 2) then {
                         if (local _veh) then {
                             _veh lock 0;
