@@ -26,8 +26,8 @@ class WeaponShops {
         side = "civ";
         conditions = "license_civ_gun";
         items[] = {
-            { "rds_weap_latarka_janta", "", 700, 350, "" },
-            { "JMSSA_w_bino_Zeiss6x30", "", 1500, 750, "" },
+            { "rds_weap_latarka_janta", "Electric Torch", 2000, 1000, "" },
+            { "JMSSA_w_bino_Zeiss6x30", "", 3000, 1500, "" },
             { "WBK_BrassKnuckles", "", 4000, 2000, "" },
             { "Knife_m3", "", 7000, 3500, "" },
             { "JMSSA_mle1892_pistol", "", 20000, 10000, "" },
@@ -49,13 +49,13 @@ class WeaponShops {
         side = "civ";
         conditions = "license_civ_rebel";
         items[] = {
-            { "rds_weap_latarka_janta", "", 700, 350, "" },
-            { "JMSSA_w_bino_Zeiss6x30", "", 1500, 750, "" },
-            { "WBK_BrassKnuckles", "", 4000, 2000, "" },
-            { "EAW_Dao", "", 8000, 4000, "" },
+            { "rds_weap_latarka_janta", "Electric Torch", 2000, 1000, "" },
+            { "JMSSA_w_bino_Zeiss6x30", "", 3000, 1500, "" },
+            { "WBK_BrassKnuckles", "", 2000, 1000, "" },
+            { "EAW_Dao", "Chinese Sword", 8000, 4000, "" },
             { "WBK_survival_weapon_3", "", 5000, 2500, "" },
             { "WBK_survival_weapon_3_r", "", 5000, 2500, "" },
-            { "Sashka_Russian", "", 100000, 50000, "" },
+            { "Sashka_Russian", "Russian Sword", 100000, 50000, "" },
             { "JMSSA_mle1892_pistol", "", 20000, 10000, "" },
             { "JMSSA_Ruby_pistol", "", 35000, 17500, "" },
             { "JMSSA_pa1935apistol", "", 40000, 20000, "" },
@@ -80,8 +80,8 @@ class WeaponShops {
         side = "civ";
         conditions = "";
         items[] = {
-            { "rds_weap_latarka_janta", "", 150, 75, "" },
-            { "JMSSA_w_bino_Zeiss6x30", "", 150, 75, "" },
+            { "rds_weap_latarka_janta", "Electric Torch", 2000, 1000, "" },
+            { "JMSSA_w_bino_Zeiss6x30", "", 3000, 1500, "" },
             { "WBK_BrassKnuckles", "", 5000, 2500, "" },
             { "Axe", "", 10000, 5000, "" },
             { "WBK_Axe", "", 15000, 7500, "" },
@@ -139,8 +139,8 @@ class WeaponShops {
         side = "civ";
         conditions = "";
         items[] = {
-            { "rds_weap_latarka_janta", "", 150, 75, "" },
-            { "JMSSA_w_bino_Zeiss6x30", "", 150, 75, "" },
+            { "rds_weap_latarka_janta", "Electric Torch", 2000, 1000, "" },
+            { "JMSSA_w_bino_Zeiss6x30", "", 3000, 1500, "" },
             { "ItemMap", "", 50, 25, "" },
             { "NORTH_FIN_Watch", "", 150, 75, "" },
             { "NORTH_SOV_Compass", "", 150, 75, "" },
@@ -156,8 +156,8 @@ class WeaponShops {
         side = "";
         conditions = "";
         items[] = {
-            { "rds_weap_latarka_janta", "", 150, 75, "" },
-            { "JMSSA_w_bino_Zeiss6x30", "", 750, 75, "" },
+            { "rds_weap_latarka_janta", "Electric Torch", 2000, 1000, "" },
+            { "JMSSA_w_bino_Zeiss6x30", "", 3000, 1500, "" },
             { "ItemMap", "", 250, 25, "" },
             { "NORTH_FIN_Watch", "", 150, 75, "" },
             { "NORTH_SOV_Compass", "", 150, 75, "" },
@@ -177,10 +177,9 @@ class WeaponShops {
             { "ItemMap", "", 250, 25, "" },
             { "NORTH_FIN_Watch", "", 150, 75, "" },
             { "NORTH_SOV_Compass", "", 150, 75, "" },
-            { "rds_weap_latarka_janta", "", 500, 250, "" },
-            { "JMSSA_w_bino_No2Mk2", "", 1500, 750, "" },
-            { "NORTH_Binocular_Huet", "", 2000, 1000, "" },
             { "FirstAidKit", "", 150, 75, "" },
+            { "rds_weap_latarka_janta", "Electric Torch", 1000, 500, "" },
+            { "NORTH_Binocular_Huet", "", 3000, 1500, "" },
             { "Police_Bat", "", 2500, 1250, "" },
             { "EAW_Hanyang_Bayonet", "", 5000, 2500, "" }, // call life_coplevel >= 1
             { "EAW_C96_Carbine", "", 20000, 10000, "" }, // call life_coplevel >= 1
@@ -221,13 +220,13 @@ class WeaponShops {
         side = "med";
         conditions = "";
         items[] = {
-            { "rds_weap_latarka_janta", "", 150, 75, "" },
-            { "JMSSA_w_bino_Zeiss6x30", "", 150, 75, "" },
+            { "rds_weap_latarka_janta", "Electric Torch", 2000, 1000, "" },
+            { "JMSSA_w_bino_Zeiss6x30", "", 3000, 1500, "" },
             { "ItemMap", "", 250, 25, "" },
             { "NORTH_FIN_Watch", "", 150, 75, "" },
             { "NORTH_SOV_Compass", "", 150, 75, "" },
             { "FirstAidKit", "", 150, 75, "" },
-            { "Pipe_aluminium", "", 5000, 2500, "" }
+            { "Pipe_aluminium", "", 1000, 500, "" }
         };
         mags[] = {};
         accs[] = {};
