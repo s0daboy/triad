@@ -128,7 +128,7 @@ master_group attachTo[bank_obj,[0,0,0]];
     };
 } forEach allUnits;
 
-[8,true,24] execFSM "\life_server\FSM\timeModule.fsm";
+[8,true,48] execFSM "\life_server\FSM\timeModule.fsm";
 
 life_adminLevel = 0;
 life_medicLevel = 0;
@@ -182,7 +182,6 @@ TON_fnc_playtime_values_request = [];
 //Just incase the Headless Client connects before anyone else
 publicVariable "TON_fnc_playtime_values";
 publicVariable "TON_fnc_playtime_values_request";
-
 
 /* Setup the federal reserve building(s) */
 private _vaultHouse = [[["Altis", "Land_Research_house_V1_F"], ["Tanoa", "Land_Medevac_house_V1_F"], ["EAW_Map", "land_EAW_WestBuilding_8"]]] call TON_fnc_terrainSort;

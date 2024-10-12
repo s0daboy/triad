@@ -11165,8 +11165,8 @@
 			<Chinesesimp>金条买家</Chinesesimp>
         </Key>
         <Key ID="STR_MAR_Gang_Hideout1">
-            <Original>Gang Hideout 1</Original>
-            <Czech>Gang Hideout 1</Czech>
+            <Original>Triad Hideout 1</Original>
+            <Czech>Triad Hideout 1</Czech>
             <French>Cachette 1</French>
             <Spanish>Escondite de Pandillas 1</Spanish>
             <Russian></Russian>
@@ -11177,8 +11177,8 @@
 			<Chinesesimp>帮派据点1</Chinesesimp>
         </Key>
         <Key ID="STR_MAR_Gang_Hideout2">
-            <Original>Gang Hideout 2</Original>
-            <Czech>Gang Hideout 2</Czech>
+            <Original>Triad Hideout 2</Original>
+            <Czech>Triad Hideout 2</Czech>
             <French>Cachette 2</French>
             <Spanish>Escondite de Pandillas 2</Spanish>
             <Russian></Russian>
@@ -11189,8 +11189,8 @@
 			<Chinesesimp>帮派据点2</Chinesesimp>
         </Key>
         <Key ID="STR_MAR_Gang_Hideout3">
-            <Original>Gang Hideout 3</Original>
-            <Czech>Gang Hideout 3</Czech>
+            <Original>Triad Hideout 3</Original>
+            <Czech>Triad Hideout 3</Czech>
             <French>Cachette 3</French>
             <Spanish>Escondite de Pandillas 3</Spanish>
             <Russian></Russian>
