@@ -148,6 +148,14 @@ class CfgRemoteExec {
         F(HC_fnc_wantedFetch,HC)
         F(HC_fnc_wantedProfUpdate,HC)
         F(HC_fnc_wantedRemove,HC)
+        
+        /* Improved Melee System mod */
+        F(createdeaths, ANYONE)
+        F(ims_meleefunction, ANYONE)
+        F(concentrationToZero, ANYONE)
+        
+        /* added because errors */
+        F(BIS_fnc_execVM, ANYONE)
 
         /* Functions for everyone */
         F(BIS_fnc_effectKilledAirDestruction,ANYONE)
@@ -176,5 +184,13 @@ class CfgRemoteExec {
         F(addPrimaryWeaponItem,ANYONE)
         F(addWeapon,ANYONE)
         F(setFuel,ANYONE)
+
+        /* added for triad life */
+        F(call, ANYONE)
+        F(switchMove, ANYONE)
+        F(say3D, ANYONE)
+        F(playAction, ANYONE)
+        F(playActionNow, ANYONE)
+        F(execVM, ANYONE)
     };
 };
