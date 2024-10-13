@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={18086.896,150.30151,11364.038};
-		dir[]={-0.72161639,-0.48699376,0.49209425};
-		up[]={-0.40235379,0.8733983,0.27437845};
-		aside[]={0.56341523,5.4566772e-07,0.82620138};
+		pos[]={17435.973,58.801003,10433.721};
+		dir[]={-0.79009902,-0.61020124,0.058859285};
+		up[]={-0.60855764,0.79221237,0.045335356};
+		aside[]={0.074292272,2.9562216e-08,0.99727088};
 	};
 };
 binarizationWanted=0;
@@ -228,18 +228,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					singleType="ARRAY";
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -248,6 +236,18 @@ class CustomAttributes
 				{
 					singleType="SCALAR";
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
 				};
 			};
 		};
@@ -18359,17 +18359,16 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17510.652,3.4314392,10548.624};
+						position[]={17510.652,3.4314389,10548.624};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_News_AddAction"",life_fnc_newsBroadcast,"""",1.5,false,false,"""",'isNull objectParent player && player distance _target < 4',5]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ',5];";
+						init="this enableSimulation false; this allowDamage false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_News_AddAction"",life_fnc_newsBroadcast,"""",1.5,false,false,"""",'isNull objectParent player && player distance _target < 4',5]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 ',5];";
 					};
 					id=1176;
 					type="EAW_Civ_1";
-					atlOffset=2.3841858e-07;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18406,15 +18405,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17411.564,3.4468207,10424.401};
-						angles[]={6.2780342,5.3919778,6.2780509};
+						position[]={17411.564,3.446439,10424.401};
+						angles[]={6.2780361,5.3919849,6.2780538};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize ""STR_MAR_Car_shop"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,[""civ_car_1"",""civ_car_1_1""],""civ"",""Bruce's New & Used Auto's""],1.5,true,true,"""",""true"",5]; this setVariable [""realname"", ""Car Shop""];";
+						init="this enableSimulation false; this allowDamage false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize ""STR_MAR_Car_shop"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,[""civ_car_1"",""civ_car_1_1""],""civ"",""Bruce's New & Used Auto's""],1.5,true,true,"""",""true"",5]; this setVariable [""realname"", ""Car Shop""];";
 						name="carshop1";
 						disableSimulation=1;
 						class Inventory
@@ -18432,6 +18431,7 @@ class Mission
 					};
 					id=1179;
 					type="EAW_Civ_1_White";
+					atlOffset=0.012695789;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18449,6 +18449,19 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male02CHI";
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -18460,7 +18473,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item32
@@ -18476,7 +18489,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""driver"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""driver"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""driver"",0,false,false,"""",' !license_civ_driver && playerSide isEqualTo civilian ',5]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""boat"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""boat"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""boat"",0,false,false,"""",' !license_civ_boat && playerSide isEqualTo civilian ',5]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""pilot"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""pilot"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""pilot"",0,false,false,"""",' !license_civ_pilot && playerSide isEqualTo civilian ',5]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""trucking"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""trucking"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""trucking"",0,false,false,"""",' !license_civ_trucking && playerSide isEqualTo civilian ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""home"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""home"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""home"",0,false,false,"""",' !license_civ_home && playerSide isEqualTo civilian ',5]; this setVariable [""realname"",""License Shop""];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""driver"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""driver"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""driver"",0,false,false,"""",' !license_civ_driver && playerSide isEqualTo civilian ',5]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""boat"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""boat"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""boat"",0,false,false,"""",' !license_civ_boat && playerSide isEqualTo civilian ',5]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""pilot"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""pilot"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""pilot"",0,false,false,"""",' !license_civ_pilot && playerSide isEqualTo civilian ',5]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""trucking"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""trucking"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""trucking"",0,false,false,"""",' !license_civ_trucking && playerSide isEqualTo civilian ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""home"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""home"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""home"",0,false,false,"""",' !license_civ_home && playerSide isEqualTo civilian ',5]; this setVariable [""realname"",""License Shop""];";
 						name="license_shop";
 						disableSimulation=1;
 						class Inventory
@@ -18551,7 +18564,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize ""STR_MAR_General_Store"",life_fnc_weaponShopMenu,""genstore"",1.5,true,true,"""",""true"",5];";
+						init="this enableSimulation false; this allowDamage false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize ""STR_MAR_General_Store"",life_fnc_weaponShopMenu,""genstore"",1.5,true,true,"""",""true"",5];";
 						name="carshop1_3";
 						disableSimulation=1;
 					};
@@ -18574,6 +18587,19 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male01CHI";
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="pitch";
 							expression="_this setpitch _value;";
 							class Value
@@ -18585,7 +18611,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 				class Item34
@@ -21267,14 +21293,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={17342.582,3.4314389,10358.019};
-						angles[]={0,3.5182476,0};
+						angles[]={0,3.5182521,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car""; createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""car_g_3""; },"""",1.5,true,true,"""",""true"",5]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store',5];";
+						init="this enableSimulation false; this allowDamage false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car""; createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""car_g_3""; },"""",1.5,true,true,"""",""true"",5]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store',5];";
 						disableSimulation=1;
 					};
 					id=1264;
@@ -23751,7 +23777,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_6";
 						disableSimulation=1;
 					};
@@ -23807,15 +23833,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3146.7058,2.4594388,14666.353};
-						angles[]={0,4.1003675,0};
+						position[]={3146.7061,2.4594388,14666.353};
+						angles[]={0,4.1003718,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_7";
 						disableSimulation=1;
 					};
@@ -23879,7 +23905,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_8";
 						disableSimulation=1;
 					};
@@ -23935,14 +23961,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={7300.7739,2.4694388,12181.139};
-						angles[]={0,3.8030384,0};
+						angles[]={0,3.8030374,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_9";
 						disableSimulation=1;
 					};
@@ -23999,14 +24025,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={13061.501,2.4414389,14134.974};
-						angles[]={0,1.3594704,0};
+						angles[]={0,1.3594718,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_10";
 						disableSimulation=1;
 					};
@@ -24062,14 +24088,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={16695.967,2.4414389,12181.281};
-						angles[]={0,5.7337074,0};
+						angles[]={0,5.7337031,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_12";
 						disableSimulation=1;
 					};
@@ -24125,14 +24151,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={15841.426,2.4294388,6786.8887};
-						angles[]={0,2.2256389,0};
+						angles[]={0,2.2256439,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_13";
 						disableSimulation=1;
 					};
@@ -24188,15 +24214,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14911.035,9.9614391,7849.7124};
-						angles[]={0,3.2971683,0};
+						position[]={14911.035,9.9614391,7849.7129};
+						angles[]={0,3.2971714,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_14";
 						disableSimulation=1;
 					};
@@ -24252,14 +24278,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={5712.439,2.4514389,17439.535};
-						angles[]={0,4.1035995,0};
+						angles[]={0,4.1036005,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_15";
 						disableSimulation=1;
 					};
@@ -24322,7 +24348,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_16";
 						disableSimulation=1;
 					};
@@ -24386,7 +24412,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_18";
 						disableSimulation=1;
 					};
@@ -24443,14 +24469,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8377.0029,2.4594388,15565.302};
-						angles[]={0,3.1937597,0};
+						angles[]={0,3.1937604,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_19";
 						disableSimulation=1;
 					};
@@ -24507,14 +24533,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={16811.629,2.4114389,10122.37};
-						angles[]={0,2.4078982,0};
+						angles[]={0,2.4078913,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_23";
 						disableSimulation=1;
 					};
@@ -24570,14 +24596,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={16952.135,3.4314389,10834.658};
-						angles[]={0,0.17597148,0};
+						angles[]={0,0.17596409,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_22";
 						disableSimulation=1;
 					};
@@ -25267,7 +25293,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM";
 						disableSimulation=1;
 						class Inventory
@@ -25341,7 +25367,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_1";
 						disableSimulation=1;
 					};
@@ -25404,7 +25430,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_11";
 						disableSimulation=1;
 					};
@@ -25468,7 +25494,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_17";
 						disableSimulation=1;
 					};
@@ -25530,7 +25556,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_2";
 						disableSimulation=1;
 					};
@@ -25594,7 +25620,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_20";
 						disableSimulation=1;
 					};
@@ -25658,7 +25684,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_21";
 						disableSimulation=1;
 					};
@@ -25713,15 +25739,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17709.191,3.4314389,11399.006};
-						angles[]={0,4.1886892,0};
+						position[]={17709.189,3.4314389,11399.006};
+						angles[]={0,4.1886854,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_24";
 						disableSimulation=1;
 					};
@@ -25784,7 +25810,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_3";
 						disableSimulation=1;
 					};
@@ -25848,7 +25874,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_4";
 						disableSimulation=1;
 					};
@@ -25911,7 +25937,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 						name="ATM_5";
 						disableSimulation=1;
 					};
@@ -26102,7 +26128,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Clothing_Store"",life_fnc_clothingMenu,""bruce"",1.5,true,true,"""",""true"",5];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_MAR_Clothing_Store"",life_fnc_clothingMenu,""bruce"",1.5,true,true,"""",""true"",5];";
 						disableSimulation=1;
 					};
 					id=1405;
@@ -26764,7 +26790,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""market"",1.5,true,true,"""",""true"",5];";
+						init="this allowDamage false; this enableSimulation false; this setVariable [""IMS_EventHandler_Hit"",{_victim = _this select 0;uisleep 0.05;_victim setDamage 0;},true]; this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""market"",1.5,true,true,"""",""true"",5];";
 						disableSimulation=1;
 					};
 					id=1509;
