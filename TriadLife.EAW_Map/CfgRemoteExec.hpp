@@ -153,6 +153,8 @@ class CfgRemoteExec {
         F(createdeaths, ANYONE)
         F(ims_meleefunction, ANYONE)
         F(concentrationToZero, ANYONE)
+        F(wbk_hitbypunch, ANYONE)
+        F(north_bace_fnc_keepreload, ANYONE)
         
         /* added because errors */
         F(BIS_fnc_execVM, ANYONE)
@@ -184,11 +186,14 @@ class CfgRemoteExec {
         F(addPrimaryWeaponItem,ANYONE)
         F(addWeapon,ANYONE)
         F(setFuel,ANYONE)
+        
+        F(removeallactions, ANYONE)
 
         /* added for triad life */
         F(call, ANYONE)
         F(switchMove, ANYONE)
         F(say3D, ANYONE)
+        F(playMoveNow, ANYONE)
         F(playAction, ANYONE)
         F(playActionNow, ANYONE)
         F(execVM, ANYONE)

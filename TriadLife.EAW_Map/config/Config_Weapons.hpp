@@ -89,7 +89,7 @@ class WeaponShops {
             { "Pipe_aluminium", "", 5000, 2500, "" },
             { "WBK_ww1_Club", "", 20000, 10000, "" },
             { "Knife_m3", "", 15000, 7500, "" },
-            { "EAW_Dao", "", 15000, 7500, "" },
+            { "EAW_Dao", "Chinese Sword", 15000, 7500, "" },
             { "JMSSA_M1934_pistol", "", 20000, 10000, "" },
             { "JMSSA_Glisenti1910_pistol", "", 20000, 10000, "" },
             { "JMSSA_m1911a1pistol", "", 25000, 12500, "" },
@@ -182,6 +182,7 @@ class WeaponShops {
             { "NORTH_Binocular_Huet", "", 3000, 1500, "" },
             { "Police_Bat", "", 2500, 1250, "" },
             { "EAW_Hanyang_Bayonet", "", 5000, 2500, "" }, // call life_coplevel >= 1
+            { "EAW_Dao", "Chinese Sword", 15000, 7500, "" },
             { "EAW_C96_Carbine", "", 20000, 10000, "" }, // call life_coplevel >= 1
             { "JMSSA_WebleyVI_pistol", "", 25000, 12500, "" }, // call life_coplevel >= 1 
             { "JMSSA_lugerP08a1pistol", "", 30000, 15000, "" }, // call life_coplevel >= 1

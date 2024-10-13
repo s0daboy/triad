@@ -234,12 +234,16 @@ class Clothing {
             { "sab_wwi_pilot_holster", "", 500, "" },
             { "rds_pistol_holster", "", 1500, "" },
             { "EAW_C96_Vest", "", 3000, "" },
+            { "EAW_C96_Vest_Dao", "", 4000, "" },
             { "EAW_Chinese_MP28_Kit", "", 4000, "" },
+            { "EAW_Chinese_MP28_Kit_Dao", "", 4000, "" },
             { "EAW_NRA_PouchesBottom_Grey", "", 2500, "" },
             { "EAW_NRA_PouchesTop_Grey", "", 2500, "" },
             { "EAW_Chinese_Bandolier_Rifle_Grey_Alt", "", 3500, "" },
             { "EAW_Chinese_Bandolier2_Rifle_Grey", "", 3500, "" },
-            { "EAW_ZB_Bandolier", "", 5000, "" }
+            { "EAW_ZB_Bandolier", "", 5000, "" },
+            { "GoG_HolsterSwordVest", "", 1000, "" },
+            { "GoG_HolsterSwordVestBack", "", 1000, "" }
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
@@ -444,7 +448,9 @@ class Clothing {
             { "JMSSA_Fra_mle35web", "", 3000, "" },
             { "JMSSA_fra_mle35rifle_holster", "", 3500, "" },
             { "JMSSA_Fra_mle35rifle_mg", "", 4000, "" },
-            { "JMSSA_fra_mle35rifle_bag", "", 4500, "" }
+            { "JMSSA_fra_mle35rifle_bag", "", 4500, "" },
+            { "GoG_HolsterSwordVest", "", 1000, "" },
+            { "GoG_HolsterSwordVestBack", "", 1000, "" }
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
@@ -532,7 +538,9 @@ class Clothing {
             { "JMSSA_Fra_mle35_holster", "", 3500, "" },
             { "JMSSA_fra_mle35rifle_holster", "", 3500, "" },
             { "JMSSA_Fra_mle35rifle_mg", "", 4000, "" },
-            { "JMSSA_fra_mle35rifle_bag", "", 3000, "" }
+            { "JMSSA_fra_mle35rifle_bag", "", 3000, "" },
+            { "GoG_HolsterSwordVest", "", 1000, "" },
+            { "GoG_HolsterSwordVestBack", "", 1000, "" }
         };
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
