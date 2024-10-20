@@ -155,6 +155,8 @@ class CfgRemoteExec {
         F(concentrationToZero, ANYONE)
         F(wbk_hitbypunch, ANYONE)
         F(north_bace_fnc_keepreload, ANYONE)
+        F(bis_fnc_effectkilled, ANYONE)
+        F(wbk_createhitanimation, ANYONE)
         
         /* added because errors */
         F(BIS_fnc_execVM, ANYONE)
@@ -197,5 +199,9 @@ class CfgRemoteExec {
         F(playAction, ANYONE)
         F(playActionNow, ANYONE)
         F(execVM, ANYONE)
+        F(spawn, ANYONE)
+        F(setanimspeedcoef, ANYONE)
+        F(addforce, ANYONE)
+        F(setunconscious, ANYONE)
     };
 };

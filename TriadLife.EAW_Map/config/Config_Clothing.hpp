@@ -212,7 +212,8 @@ class Clothing {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
             { "EAW_Chinese_Uniform_Private", $STR_C_Cop_uniforms, 1000, "" },
             { "EAW_Chinese_Uniform_Sergeant", "", 2500, "" },
-            { "EAW_Chinese_Uniform_Major", "", 7500, "" }
+            { "EAW_Chinese_Uniform_Major", "", 7500, "" },
+            { "ff_suit", "Black Suit", 10000, "" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
@@ -220,7 +221,8 @@ class Clothing {
             { "EAW_Chinese_Cap_2", "", 500, "" },
             { "EAW_Chinese_Winter_Cap_1", "", 750, "" },
             { "EAW_Chinese_Winter_Cap_2", "", 750, "" },
-            { "EAW_M35_2", "", 12500, "" }
+            { "EAW_M35_2", "", 12500, "" },
+            { "H_NORTH_Fedora_Black", "Black Hat", 5000, "" }
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },

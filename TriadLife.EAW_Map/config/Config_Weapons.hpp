@@ -52,10 +52,10 @@ class WeaponShops {
             { "rds_weap_latarka_janta", "Electric Torch", 2000, 1000, "" },
             { "JMSSA_w_bino_Zeiss6x30", "", 3000, 1500, "" },
             { "WBK_BrassKnuckles", "", 2000, 1000, "" },
-            { "EAW_Dao", "Chinese Sword", 8000, 4000, "" },
+            { "EAW_Dao", "Dadao", 8000, 4000, "" },
             { "WBK_survival_weapon_3", "", 5000, 2500, "" },
             { "WBK_survival_weapon_3_r", "", 5000, 2500, "" },
-            { "Sashka_Russian", "Russian Sword", 100000, 50000, "" },
+            { "Sashka_Russian", "Russian Saber", 100000, 50000, "" },
             { "JMSSA_mle1892_pistol", "", 20000, 10000, "" },
             { "JMSSA_Ruby_pistol", "", 35000, 17500, "" },
             { "JMSSA_pa1935apistol", "", 40000, 20000, "" },
@@ -89,7 +89,7 @@ class WeaponShops {
             { "Pipe_aluminium", "", 5000, 2500, "" },
             { "WBK_ww1_Club", "", 20000, 10000, "" },
             { "Knife_m3", "", 15000, 7500, "" },
-            { "EAW_Dao", "Chinese Sword", 15000, 7500, "" },
+            { "EAW_Dao", "Dadao", 15000, 7500, "" },
             { "JMSSA_M1934_pistol", "", 20000, 10000, "" },
             { "JMSSA_Glisenti1910_pistol", "", 20000, 10000, "" },
             { "JMSSA_m1911a1pistol", "", 25000, 12500, "" },
@@ -182,7 +182,7 @@ class WeaponShops {
             { "NORTH_Binocular_Huet", "", 3000, 1500, "" },
             { "Police_Bat", "", 2500, 1250, "" },
             { "EAW_Hanyang_Bayonet", "", 5000, 2500, "" }, // call life_coplevel >= 1
-            { "EAW_Dao", "Chinese Sword", 15000, 7500, "" },
+            { "EAW_Dao", "Dadao", 15000, 7500, "" },
             { "EAW_C96_Carbine", "", 20000, 10000, "" }, // call life_coplevel >= 1
             { "JMSSA_WebleyVI_pistol", "", 25000, 12500, "" }, // call life_coplevel >= 1 
             { "JMSSA_lugerP08a1pistol", "", 30000, 15000, "" }, // call life_coplevel >= 1
