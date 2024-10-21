@@ -110,7 +110,8 @@ class CarShops {
             { "sab_camel_i", "" },
             { "sab_an2_c", "" },
             { "JK_C_DC3_F", "" },
-            { "JK_B_Wolves_PMC_DC3_F", "" }
+            { "JK_B_Wolves_PMC_DC3_F", "" },
+            { "sab_wwi_blimp", "" }
         };
     };
 
@@ -212,7 +213,8 @@ class CarShops {
             { "LIB_RAAF_P39", "" }, // needs retexture
 */
             { "sab_an2_c", "" }, //not period accurate and new texture would be good
-            { "JK_B_C47_F", "" } // needs retexture
+            { "JK_B_C47_F", "" }, // needs retexture
+            { "sab_wwi_zeppelin", "" }
         };
     };
 
@@ -434,6 +436,20 @@ class LifeCfgVehicles {
         vItemSpace = 50;
         conditions = "license_civ_pilot || {!(playerSide isEqualTo civilian)}";
         price = 90000;
+        textures[] = {};
+    };
+
+    class sab_wwi_blimp {
+        vItemSpace = 500;
+        conditions = "license_civ_pilot || {!(playerSide isEqualTo civilian)}";
+        price = 250000;
+        textures[] = {};
+    };
+
+    class sab_wwi_zeppelin {
+        vItemSpace = 500;
+        conditions = "license_cop_cAir";
+        price = 250000;
         textures[] = {};
     };
 	

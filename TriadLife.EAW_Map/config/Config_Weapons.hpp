@@ -61,7 +61,11 @@ class WeaponShops {
             { "JMSSA_pa1935apistol", "", 40000, 20000, "" },
             { "EAW_Hanyang88_Base", "", 35000, 17500, "" },
             { "JMSSA_beretta18_Rifle", "", 40000, 20000, "" },
-            { "JMSSA_breda30_Rifle", "", 90000, 45000, "" }
+            { "JMSSA_breda30_Rifle", "", 90000, 45000, "" },
+            { "NORTH_molotov", "Fire Bomb", 5000, 2500, "" },
+            { "NORTH_molotov_sokaisupullo", "Smoke Bomb", 5000, 2500, "" },
+            { "NORTH_NOR_IMPROV_GRENADE", "Tin Can Grenade", 5000, 2500, "" },
+            { "NORTH_NOR_IMPROV_SMOKE", "Tin Can Smoke Grenade", 5000, 2500, "" }
         };
         mags[] = {
             { "JMSSA_6Rnd_8x27", "", 250, 125, "" },
@@ -100,6 +104,10 @@ class WeaponShops {
             { "JMSSA_Lewis_Rifle", "", 80000, 40000, "" },
             { "JMSSA_breda30_Rifle", "", 85000, 42500, "" },
             { "JMSSA_mac2429_Rifle", "", 100000, 50000, "" },
+            { "NORTH_molotov", "Fire Bomb", 5000, 2500, "" },
+            { "NORTH_molotov_sokaisupullo", "Smoke Bomb", 5000, 2500, "" },
+            { "NORTH_NOR_IMPROV_GRENADE", "Tin Can Grenade", 5000, 2500, "" },
+            { "NORTH_NOR_IMPROV_SMOKE", "Tin Can Smoke Grenade", 5000, 2500, "" },
             { "G_NORTH_FIN_Gloves_leather", "", 5000, 2500, "" },
             { "G_NORTH_FIN_Gloves_leather_2", "", 5000, 2500, "" },
             { "G_NORTH_FIN_Gloves", "", 3000, 1500, "" },
@@ -196,7 +204,9 @@ class WeaponShops {
             { "JMSSA_mp40_Rifle", "", 70000, 35000, "" }, // call life_coplevel >= 3
             { "EAW_ZB26_Base", "", 100000, 50000, "" }, // call life_coplevel >= 3
             { "EAW_Type95", "Officer Sword", 100000, 50000, "" }, // call life_coplevel >= 3
-            { "JMSSA_MG34_Rifle", "", 150000, 75000, "" } // call life_coplevel >= 3
+            { "JMSSA_MG34_Rifle", "", 150000, 75000, "" }, // call life_coplevel >= 3
+            { "EAW_Chinese_Grenade_Mag", "Chinese Grenade", 5000, 2500, "" }, // call life_coplevel >= 3
+            { "JMSSA_SRCMmod35smoke_HandGrenade", "Smoke Grenade", 5000, 2500, "" } // call life_coplevel >= 3
         };
         mags[] = {
             { "JMSSA_6Rnd_455", "", 100, 50, "" }, //webley vi
