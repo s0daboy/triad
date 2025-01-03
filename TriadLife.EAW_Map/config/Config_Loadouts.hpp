@@ -24,12 +24,12 @@ class Loadouts {
         };
         backpack[] = {};
         weapon[] = {
-            {"hgun_P07_snds_F", "call life_copLevel >= 0"}
-            // {"EAW_C96", "call life_copLevel >= 0"}
+            // {"hgun_P07_snds_F", "call life_copLevel >= 0"}
+            {"EAW_C96", "call life_copLevel >= 0"}
         };
         mags[] = {
-            {"16Rnd_9x21_Mag", 6, "call life_copLevel >= 0"}
-            // {"EAW_C96_Magazine", 6, "call life_copLevel >= 0"}
+            // {"16Rnd_9x21_Mag", 6, "call life_copLevel >= 0"}
+            {"EAW_C96_Magazine", 6, "call life_copLevel >= 0"}
         };
         items[] = {};
         linkedItems[] = {
